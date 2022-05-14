@@ -39,13 +39,11 @@ int main (){
     QuickSort qks;
     RecursiveBinarySearch rbs;
 
-    vector <int> test = qks.sort(input);
-    if (rbs.search(input, 1)){
+    vector <int> test = bbs.sort(input);
+    if (rbs.search(input, 1))
         cout << "true ";
-    }
-    else{
+    if (~rbs.search(input, 1))
         cout << "false ";
-    }
     
     for (int i = 0; i < input.size(); i++){
         cout << input.at(i);
