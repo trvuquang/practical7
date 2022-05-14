@@ -40,11 +40,13 @@ int main (){
     RecursiveBinarySearch rbs;
 
     vector <int> test = bbs.sort(input);
-    if (rbs.search(test, 1))
+    if (rbs.search(test, 1)){
         cout << "true ";
-    else
+    }
+    else{
         cout << "false ";
-
+    }
+    
     for (int i = 0; i < test.size(); i++){
         cout << test.at(i);
         cout << " ";
