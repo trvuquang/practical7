@@ -41,10 +41,10 @@ int main (){
 
     vector <int> test = bbs.sort(input);
 
-    if (~rbs.search(test, 1))
-        cout << "false ";
-    else
+    if (rbs.search(test, 1))
         cout << "true ";
+    else
+        cout << "false ";
     
     for (int i = 0; i < test.size(); i++){
         cout << test.at(i);
