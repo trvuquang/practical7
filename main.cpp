@@ -20,7 +20,10 @@ int space_counter(string input){
 }
 
 
-int main (){    
+int main (){ 
+    BubbleSort bbs;
+    QuickSort qks;
+    RecursiveBinarySearch rbs;
     string S, temp; 
     getline(cin, S);
     stringstream X(S);
@@ -34,13 +37,7 @@ int main (){
         index++;
     }
 
-
-    BubbleSort bbs;
-    QuickSort qks;
-    RecursiveBinarySearch rbs;
-
     vector <int> test = bbs.sort(input);
-
     if (rbs.search(test, 1))
         cout << "true ";
     else
@@ -50,6 +47,5 @@ int main (){
         cout << test.at(i);
         cout << " ";
     }
-
 }
 
